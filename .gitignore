@@ -1,0 +1,17 @@
+# All PHPStorm files
+.idea/
+*.xml
+*.iml
+
+# Any and all PDF files, MOV files, files in folder "bronbestanden", "bronmateriaal"
+bronbestanden/
+bronmateriaal/
+*.pdf
+*.mov
+
+# Visual Studio Code - https://code.visualstudio.com/
+.settings/
+.vscode/
+
+# Own Ignore
+gitignore/*
