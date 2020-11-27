@@ -1,79 +1,485 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Howest Trajectbuilder</title>
-    <link rel="stylesheet" href="assets/css/reset.css"/>
-    <link rel="stylesheet" href="assets/css/screen.css"/>
-
+   <meta charset="UTF-8">
+   <title>Howest Trajectbuilder</title>
+   <link rel="stylesheet" href="assets/css/reset.css" />
+   <link rel="stylesheet" href="assets/css/screen.css" />
 </head>
-<body>
-    <!-- Top Navbar -->
-    <nav>
-        <ul>
-            <li class="title">
-                Howest Curriculum Builder
-            </li>
-            <li class="create-curriculum">
-                Create your individual Curriculum
-            </li>
-        </ul>
-    </nav>
-    <!-- Top Navbar -->
-    <!-- Header -->
-    <header>
-        <div class="image"></div>
-    </header>
-    <!-- Header -->
-    
-    <div class="row">
-        <!-- Right Aside -->
-        <div class="column aside">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint ab cupiditate dolorem quibusdam iste, repellendus eum eius corporis voluptatum ullam, architecto harum quaerat laborum recusandae nisi voluptate, beatae magnam incidunt.</div>
-        <!-- Right Aside -->
-        <div class="column main">
-        <!-- Welcome Page -->
-        <section class="welcome-page">
-            <div class="title">
-                <span> <img class="icon" src="./assets/media/curriculum.svg" alt=""></span>
-                Curriculum builder: the tool for tailored curricula</div>
-            <div class="content">
-                <ul>
-                    <li>Studying for a Bachelor's degree can be tough. Not everyone commences studies with the same background, whilst others
-                    combine it with a (full-time) job. In order to service all students from all backgrounds, we enable them to create a
-                    tailor-made curriculum that suits their needs.</li>
-                    <li>Curricula have to fit like a glove. Study too light, boredom and disinterest will set in. Take on a too loaded approach
-                    and you'll succomb to the insurmountable pressure. It is important that each semester is balanced.</li>
-                    <li>This tool allows you to take your pick from available courses and construct a schedule that does not only fit your
-                    needs, but <mark>respects the order</mark> in which certain topics need to be processed. You may take longer or shorter than a
-                    <mark>standard student</mark> depending on your constructed curriculum, but at least you'll be happy</li>
-                    <li>Go ahead and get started!</li>
-                    <li>
-                        <button class="btn btn-primary">Enter personal data</button>
-                    </li>
-                </ul>
 
+<body>
+   <!-- Top Navbar -->
+   <nav>
+      <ul>
+         <li class="title">
+            Howest Curriculum Builder
+         </li>
+         <li class="create-curriculum">
+            Create your individual Curriculum
+         </li>
+      </ul>
+   </nav>
+   <!-- Top Navbar -->
+   <!-- Header -->
+   <header>
+      <div class="image"></div>
+   </header>
+   <!-- Header -->
+   <main>
+      <div class="row">
+         <!-- Right Aside -->
+         <div class="column aside">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint ab cupiditate dolorem
+            quibusdam iste, repellendus eum eius corporis voluptatum ullam, architecto harum quaerat laborum recusandae
+            nisi voluptate, beatae magnam incidunt.</div>
+         <!-- Right Aside -->
+         <div class="column main">
+            <!-- Welcome Page -->
+            <section class="welcome-page">
+               <div class="title">
+                  <span> <img class="icon" src="./assets/media/curriculum.svg" alt=""></span>
+                  Curriculum builder: the tool for tailored curricula
+               </div>
+               <div class="content">
+                  <ul>
+                     <li>Studying for a Bachelor's degree can be tough. Not everyone commences studies with the same
+                        background, whilst others
+                        combine it with a (full-time) job. In order to service all students from all backgrounds, we
+                        enable them to create a
+                        tailor-made curriculum that suits their needs.
+                     </li>
+                     <li>Curricula have to fit like a glove. Study too light, boredom and disinterest will set in. Take
+                        on a too loaded approach
+                        and you'll succomb to the insurmountable pressure. It is important that each semester is
+                        balanced.
+                     </li>
+                     <li>This tool allows you to take your pick from available courses and construct a schedule that
+                        does not only fit your
+                        needs, but <mark>respects the order</mark> in which certain topics need to be processed. You may
+                        take longer or shorter than a
+                        <mark>standard student</mark> depending on your constructed curriculum, but at least you'll be
+                        happy
+                     </li>
+                     <li>Go ahead and get started!</li>
+                     <li>
+                        <button class="btn btn-primary">Enter personal data</button>
+                     </li>
+                  </ul>
             </section>
-        <!-- Welcome Page -->
-        </div>
-    </div>
-    
-    <!-- Login Page -->
-    
-    <!-- Login Page -->
-    <!-- Completed Course Page -->
-    
-    <!-- Completed Course Page -->
-    <!-- Configure Course Page -->
-    
-    <!-- Configure Course Page -->
-    <!-- Choice Page -->
-    
-    <!-- Choice Page -->
-    <!-- Thanks Page -->
-    
-    <!-- Thanks Page -->
-    <!-- Footer Page -->
-    
-    <!-- Footer Page -->
+            <!-- Welcome Page -->
+            <!-- Login Page -->
+            <section class="login-page">
+               <div class="title">
+                  <span> <img class="icon" src="./assets/media/personal-data.svg" alt=""></span>Enter personal data
+               </div>
+               <div class="content">
+                  <ul>
+                     <li>In order to serve you correctly, we need to know some basic information first
+                     </li>
+                     <li>
+                        <form action="#">
+                           <ul>
+                              <li>Name</li>
+                              <input type="text" id="name" name="name">
+                              <li>Email</li>
+                              <input type="text" id="email" name="email">
+                              <li>ECTS available for allocation</li>
+                              <input type="text" id="ECTS" name="ECTS">
+                           </ul>
+                        </form>
+                     </li>
+                     <li>
+                        <button class="btn btn-primary">Enter personal data</button>
+                     </li>
+                  </ul>
+               </div>
+            </section>
+            <!-- Login Page -->
+            <!-- Completed Course Page -->
+            <section class="complete-page">
+               <div class="title">
+                  <span>
+                     <img class="icon" src="./assets/media/completed-courses.svg" alt="">
+                  </span>
+                  Select the courses you have already completed
+               </div>
+               <div class="content">
+                  <ul>
+                     <li>Selecting the courses that have already been completed will enable us to correctly fill out
+                        prerequisite knowledge for follow-up courses. If you haven't completed any courses yet, your
+                        selection will be limited to courses from the first and second semester.
+                     </li>
+                     <ul class="complete-controller">
+                        <li class="semesters">
+                           <ul class="content">
+                              <li class="semesters-selector">
+                                 <ul>
+                                    <li class="selected">S1</li>
+                                    <li>S1</li>
+                                    <li>S1</li>
+                                    <li>S1</li>
+                                    <li>S1</li>
+                                    <li>S1</li>
+                                 </ul>
+                              </li>
+                              <li>visable semesters</li>
+                           </ul>
+                        </li>
+                        <li class="ordering">
+                           <ul>
+                              <li>
+                                 <select name="ordering-types" id="cars">
+                                    <option value="volvo">ascending</option>
+                                    <option value="saab">descending</option>
+                                 </select>
+                              </li>
+                              <li>Sort Courses</li>
+                           </ul>
+                        </li>
+                     </ul>
+                  </ul>
+                  <div class="courses">
+                     <ul>
+                        <li>
+                           <div class="title"> Software Development</div>
+                           <div class="image"> </div>
+                           <div class="ects"> 00ECTS</div>
+                           <div class="instructor"> Oby da. A</div>
+                           <div class="btn"> Compelete </div>
+
+                        </li>
+                        <li>
+                           <div class="title"> Software Development</div>
+                           <div class="image"> </div>
+                           <div class="ects"> 00ECTS</div>
+                           <div class="instructor"> Oby da. A</div>
+                           <div class="btn"> Compelete </div>
+
+                        </li>
+                        <li>
+                           <div class="title"> Software Development</div>
+                           <div class="image"> </div>
+                           <div class="ects"> 00ECTS</div>
+                           <div class="instructor"> Oby da. A</div>
+                           <div class="btn"> Compelete </div>
+
+                        </li>
+                        <li>
+                           <div class="title"> Software Development</div>
+                           <div class="image"> </div>
+                           <div class="ects"> 00ECTS</div>
+                           <div class="instructor"> Oby da. A</div>
+                           <div class="btn"> Compelete </div>
+
+                        </li>
+                        <li>
+                           <div class="title"> Software Development</div>
+                           <div class="image"> </div>
+                           <div class="ects"> 00ECTS</div>
+                           <div class="instructor"> Oby da. A</div>
+                           <div class="btn"> Compelete </div>
+
+                        </li>
+                        <li>
+                           <div class="title"> Software Development</div>
+                           <div class="image"> </div>
+                           <div class="ects"> 00ECTS</div>
+                           <div class="instructor"> Oby da. A</div>
+                           <div class="btn"> Compelete </div>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="navigators">
+                     <button class="btn">
+                        Modify personal data </button>
+                     <button class="btn">
+                        Configure course curriculum</button>
+                  </div>
+                  <!-- Completed Course Page -->
+                  <!-- Configure Course Page -->
+                  <!-- Configure Course Page -->
+                  <!-- Choice Page -->
+                  <!-- Choice Page -->
+                  <!-- Thanks Page -->
+                  <!-- Thanks Page -->
+               </div>
+            </section>
+            <!-- Completed Course Page -->
+            <!-- Configure Course Page -->
+            <section class="configure-page">
+               <div class="title">
+                  <span>
+                     <img class="icon" src="./assets/media/new-courses.svg" alt="">
+                  </span>
+                  Configure course curriculum </div>
+               <div class="content">
+                  <ul>
+                     <li>Select the courses you want to include in your curriculum next academic year
+                     </li>
+                     <ul class="complete-controller">
+                        <li class="semesters">
+                           <ul class="content">
+                              <li class="semesters-selector">
+                                 <ul>
+                                    <li class="selected">S1</li>
+                                    <li>S1</li>
+                                    <li>S1</li>
+                                    <li>S1</li>
+                                    <li>S1</li>
+                                    <li>S1</li>
+                                 </ul>
+                              </li>
+                              <li>visable semesters</li>
+                           </ul>
+                        </li>
+                        <li class="ordering">
+                           <ul>
+                              <li>
+                                 <select name="ordering-types" id="cars">
+                                    <option value="volvo">ascending</option>
+                                    <option value="saab">descending</option>
+                                 </select>
+                              </li>
+                              <li>Sort Courses</li>
+                           </ul>
+                        </li>
+                     </ul>
+                  </ul>
+                  <div class="courses">
+                     <ul>
+                        <li>
+                           <div class="title"> Software Development</div>
+                           <div class="image"> </div>
+                           <div class="ects"> 00ECTS</div>
+                           <div class="instructor"> Oby da. A</div>
+                           <div class="btn"> Take Course </div>
+
+                        </li>
+                        <li>
+                           <div class="title"> Software Development</div>
+                           <div class="image"> </div>
+                           <div class="ects"> 00ECTS</div>
+                           <div class="instructor"> Oby da. A</div>
+                           <div class="btn"> Take Course </div>
+
+                        </li>
+                        <li>
+                           <div class="title"> Software Development</div>
+                           <div class="image"> </div>
+                           <div class="ects"> 00ECTS</div>
+                           <div class="instructor"> Oby da. A</div>
+                           <div class="btn"> Take Course </div>
+
+                        </li>
+                        <li>
+                           <div class="title"> Software Development</div>
+                           <div class="image"> </div>
+                           <div class="ects"> 00ECTS</div>
+                           <div class="instructor"> Oby da. A</div>
+                           <div class="btn"> Take Course </div>
+
+                        </li>
+                        <li>
+                           <div class="title"> Software Development</div>
+                           <div class="image"> </div>
+                           <div class="ects"> 00ECTS</div>
+                           <div class="instructor"> Oby da. A</div>
+                           <div class="btn"> Take Course </div>
+
+                        </li>
+                        <li>
+                           <div class="title"> Software Development</div>
+                           <div class="image"> </div>
+                           <div class="ects"> 00ECTS</div>
+                           <div class="instructor"> Oby da. A</div>
+                           <div class="btn"> Take Course </div>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="navigators">
+                     <button class="btn">
+                        Modify personal data </button>
+                     <button class="btn">
+                        Configure course curriculum</button>
+                  </div>
+               </div>
+            </section>
+            <!-- Configure Course Page -->
+            <!-- Choice Course Page -->
+            <section class="Choice-page">
+               <div class="title">
+                  <span>
+                     <img class="icon" src="./assets/media/overview.svg" alt="">
+                  </span>
+                  Choice overview </div>
+               <div class="content">
+                  <ul>
+                     <li>Carefully study the table below and double check if the completed courses and desired courses
+                        check out. Once your application has been submitted, there is no turning back!
+                     </li>
+                     <li>
+                        <ul class="ects-counts">
+                           <li class="completed">
+                              <div class="title">Completed ECTS</div>
+                              <div class="count">60</div>
+                           </li>
+                           <li> <img class="icon" src="./assets/media/arrow.svg" alt="">
+                           </li>
+                           <li class="desired">
+                              <div class="title">Desired ECTS</div>
+                              <div class="count">60</div>
+                           </li>
+                        </ul>
+                     </li>
+                     <li>
+                        <table class="courses-view completesd">
+                           <tr>
+                              <th colspan=" 3">Company</th>
+                           </tr>
+                           <tr class="table-titles">
+                              <th>Company</th>
+                              <th>Contact</th>
+                              <th>Country</th>
+                           </tr>
+                           <tr>
+                              <td>Alfreds Futterkiste</td>
+                              <td>Maria Anders</td>
+                              <td>Germany</td>
+                           </tr>
+                           <tr>
+                              <td>Berglunds snabbköp</td>
+                              <td>Christina Berglund</td>
+                              <td>Sweden</td>
+                           </tr>
+                           <tr>
+                              <td>Centro comercial Moctezuma</td>
+                              <td>Francisco Chang</td>
+                              <td>Mexico</td>
+                           </tr>
+                           <tr>
+                              <td>Ernst Handel</td>
+                              <td>Roland Mendel</td>
+                              <td>Austria</td>
+                           </tr>
+                           <tr>
+                              <td>Island Trading</td>
+                              <td>Helen Bennett</td>
+                              <td>UK</td>
+                           </tr>
+                           <tr>
+                              <td>Königlich Essen</td>
+                              <td>Philip Cramer</td>
+                              <td>Germany</td>
+                           </tr>
+                           <tr>
+                              <td>Laughing Bacchus Winecellars</td>
+                              <td>Yoshi Tannamuri</td>
+                              <td>Canada</td>
+                           </tr>
+                           <tr>
+                              <td>Magazzini Alimentari Riuniti</td>
+                              <td>Giovanni Rovelli</td>
+                              <td>Italy</td>
+                           </tr>
+                           <tr>
+                              <td>North/South</td>
+                              <td>Simon Crowther</td>
+                              <td>UK</td>
+                           </tr>
+                           <tr>
+                              <td>Paris spécialités</td>
+                              <td>Marie Bertrand</td>
+                              <td>France</td>
+                           </tr>
+                        </table>
+                        <table class="courses-view desired">
+                           <tr>
+                              <th colspan="3">Company</th>
+                           </tr>
+                           <tr class="table-titles">
+                              <th>Company</th>
+                              <th>Contact</th>
+                              <th>Country</th>
+                           </tr>
+                           <tr>
+                              <td>Alfreds Futterkiste</td>
+                              <td>Maria Anders</td>
+                              <td>Germany</td>
+                           </tr>
+                           <tr>
+                              <td>Berglunds snabbköp</td>
+                              <td>Christina Berglund</td>
+                              <td>Sweden</td>
+                           </tr>
+                           <tr>
+                              <td>Centro comercial Moctezuma</td>
+                              <td>Francisco Chang</td>
+                              <td>Mexico</td>
+                           </tr>
+                           <tr>
+                              <td>Ernst Handel</td>
+                              <td>Roland Mendel</td>
+                              <td>Austria</td>
+                           </tr>
+                           <tr>
+                              <td>Island Trading</td>
+                              <td>Helen Bennett</td>
+                              <td>UK</td>
+                           </tr>
+                           <tr>
+                              <td>Königlich Essen</td>
+                              <td>Philip Cramer</td>
+                              <td>Germany</td>
+                           </tr>
+                           <tr>
+                              <td>Laughing Bacchus Winecellars</td>
+                              <td>Yoshi Tannamuri</td>
+                              <td>Canada</td>
+                           </tr>
+                           <tr>
+                              <td>Magazzini Alimentari Riuniti</td>
+                              <td>Giovanni Rovelli</td>
+                              <td>Italy</td>
+                           </tr>
+                           <tr>
+                              <td>North/South</td>
+                              <td>Simon Crowther</td>
+                              <td>UK</td>
+                           </tr>
+                           <tr>
+                              <td>Paris spécialités</td>
+                              <td>Marie Bertrand</td>
+                              <td>France</td>
+                           </tr>
+                        </table>
+                     </li>
+                  </ul>
+
+               </div>
+            </section>
+            <!-- Choice Course Page -->
+            <section class="thank-page">
+               <div class="title">
+                  <span>
+                     <img class="icon" src="./assets/media/thank-you.svg" alt="">
+                  </span>
+                  Thank you for your submission! </div>
+               <div class="content">
+                  <ul>
+                     <li>Thank you for submitting your curriculum. The course counsellor will be in touch shortly.
+                     </li>
+
+                  </ul>
+
+               </div>
+            </section>
+            <!-- Choice Course Page -->
+   </main>
+   <!-- Footer Page -->
+   <footer>
+      All images courtesy of font awesome and flaticon
+   </footer>
+   <!-- Footer Page -->
 </body>
+
 </html>
