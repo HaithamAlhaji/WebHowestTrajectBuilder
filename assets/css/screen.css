@@ -193,10 +193,14 @@ aside {
   width: 32px;
 }
 /* Welcome Page */
+section > .title > span{
+  margin-right: 10px;
+}
 section > .title {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 5px;
+  
 }
 
 section.welcome-page .content li {
