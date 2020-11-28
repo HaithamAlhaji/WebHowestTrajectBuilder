@@ -62,7 +62,7 @@
          <!-- Right Aside -->
          <div class="column main">
             <!-- Welcome Page -->
-            <section class="welcome-page">
+            <div class="welcome-page">
                <div class="title">
                   <span> <img class="icon" src="./assets/media/curriculum.svg" alt=""></span>
                   Curriculum builder: the tool for tailored curricula
@@ -92,10 +92,11 @@
                         <button class="btn btn-primary">Enter personal data</button>
                      </li>
                   </ul>
-            </section>
+               </div>
+            </div>
             <!-- Welcome Page -->
             <!-- Login Page -->
-            <section class="login-page">
+            <div class="login-page">
                <div class="title">
                   <span> <img class="icon" src="./assets/media/personal-data.svg" alt=""></span>Enter personal data
                </div>
@@ -105,14 +106,13 @@
                      </li>
                      <li>
                         <form action="#">
-                           <ul>
-                              <li>Name</li>
-                              <input type="text" id="name" name="name">
-                              <li>Email</li>
-                              <input type="text" id="email" name="email">
-                              <li>ECTS available for allocation</li>
-                              <input type="text" id="ECTS" name="ECTS">
-                           </ul>
+                           Name
+                           <input type="text" id="name" name="name">
+                           Email
+                           <input type="text" id="email" name="email">
+                           ECTS available for allocation
+                           <input type="text" id="ECTS" name="ECTS">
+
                         </form>
                      </li>
                      <li>
@@ -120,10 +120,10 @@
                      </li>
                   </ul>
                </div>
-            </section>
+            </div>
             <!-- Login Page -->
             <!-- Completed Course Page -->
-            <section class="complete-page">
+            <div class="complete-page">
                <div class="title">
                   <span>
                      <img class="icon" src="./assets/media/completed-courses.svg" alt="">
@@ -136,34 +136,37 @@
                         prerequisite knowledge for follow-up courses. If you haven't completed any courses yet, your
                         selection will be limited to courses from the first and second semester.
                      </li>
-                     <ul class="complete-controller">
-                        <li class="semesters">
-                           <ul class="content">
-                              <li class="semesters-selector">
-                                 <ul>
-                                    <li class="selected">S1</li>
-                                    <li>S1</li>
-                                    <li>S1</li>
-                                    <li>S1</li>
-                                    <li>S1</li>
-                                    <li>S1</li>
-                                 </ul>
-                              </li>
-                              <li>visable semesters</li>
-                           </ul>
-                        </li>
-                        <li class="ordering">
-                           <ul>
-                              <li>
-                                 <select name="ordering-types" id="cars">
-                                    <option value="volvo">ascending</option>
-                                    <option value="saab">descending</option>
-                                 </select>
-                              </li>
-                              <li>Sort Courses</li>
-                           </ul>
-                        </li>
-                     </ul>
+                     <li>
+                        <ul class="complete-controller">
+                           <li class="semesters">
+                              <ul class="content">
+                                 <li class="semesters-selector">
+                                    <ul>
+                                       <li class="selected">S1</li>
+                                       <li>S1</li>
+                                       <li>S1</li>
+                                       <li>S1</li>
+                                       <li>S1</li>
+                                       <li>S1</li>
+                                    </ul>
+                                 </li>
+                                 <li>visable semesters</li>
+                              </ul>
+                           </li>
+                           <li class="ordering">
+                              <ul>
+                                 <li>
+                                    <select name="ordering-types">
+                                       <option value="volvo">ascending</option>
+                                       <option value="saab">descending</option>
+                                    </select>
+                                 </li>
+                                 <li>Sort Courses</li>
+                              </ul>
+                           </li>
+                        </ul>
+                     </li>
+
                   </ul>
                   <div class="courses">
                      <ul>
@@ -230,10 +233,10 @@
                   <!-- Thanks Page -->
                   <!-- Thanks Page -->
                </div>
-            </section>
+            </div>
             <!-- Completed Course Page -->
             <!-- Configure Course Page -->
-            <section class="configure-page">
+            <div class="configure-page">
                <div class="title">
                   <span>
                      <img class="icon" src="./assets/media/new-courses.svg" alt="">
@@ -243,34 +246,37 @@
                   <ul>
                      <li>Select the courses you want to include in your curriculum next academic year
                      </li>
-                     <ul class="complete-controller">
-                        <li class="semesters">
-                           <ul class="content">
-                              <li class="semesters-selector">
-                                 <ul>
-                                    <li class="selected">S1</li>
-                                    <li class="selected">S2</li>
-                                    <li class="selected">S3</li>
-                                    <li>S1</li>
-                                    <li>S1</li>
-                                    <li>S1</li>
-                                 </ul>
-                              </li>
-                              <li>visable semesters</li>
-                           </ul>
-                        </li>
-                        <li class="ordering">
-                           <ul>
-                              <li>
-                                 <select name="ordering-types" id="cars">
-                                    <option value="volvo">ascending</option>
-                                    <option value="saab">descending</option>
-                                 </select>
-                              </li>
-                              <li>Sort Courses</li>
-                           </ul>
-                        </li>
-                     </ul>
+                     <li>
+                        <ul class="complete-controller">
+                           <li class="semesters">
+                              <ul class="content">
+                                 <li class="semesters-selector">
+                                    <ul>
+                                       <li class="selected">S1</li>
+                                       <li class="selected">S2</li>
+                                       <li class="selected">S3</li>
+                                       <li>S1</li>
+                                       <li>S1</li>
+                                       <li>S1</li>
+                                    </ul>
+                                 </li>
+                                 <li>visable semesters</li>
+                              </ul>
+                           </li>
+                           <li class="ordering">
+                              <ul>
+                                 <li>
+                                    <select name="ordering-types">
+                                       <option value="volvo">ascending</option>
+                                       <option value="saab">descending</option>
+                                    </select>
+                                 </li>
+                                 <li>Sort Courses</li>
+                              </ul>
+                           </li>
+                        </ul>
+                     </li>
+
                   </ul>
                   <div class="courses">
                      <ul>
@@ -330,10 +336,10 @@
                         Configure course curriculum</button>
                   </div>
                </div>
-            </section>
+            </div>
             <!-- Configure Course Page -->
             <!-- Choice Course Page -->
-            <section class="choice-page">
+            <div class="choice-page">
                <div class="title">
                   <span>
                      <img class="icon" src="./assets/media/overview.svg" alt="">
@@ -438,9 +444,9 @@
                   <button class="btn">
                      Configure course curriculum</button>
                </div>
-            </section>
+            </div>
             <!-- Choice Course Page -->
-            <section class="thank-page">
+            <div class="thank-page">
                <div class="title">
                   <span>
                      <img class="icon" src="./assets/media/thank-you.svg" alt="">
@@ -454,8 +460,10 @@
                   </ul>
 
                </div>
-            </section>
+            </div>
             <!-- Choice Course Page -->
+         </div>
+      </div>
    </main>
    <!-- Footer Page -->
    <footer>

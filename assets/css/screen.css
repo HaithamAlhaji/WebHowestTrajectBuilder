@@ -127,7 +127,7 @@ nav ul li.create-curriculum {
   font-size: 1rem;
 }
 /* Main */
-main section{
+main > div{
   margin-bottom: 20px;
 }
 /* Header */
@@ -193,20 +193,20 @@ aside {
   width: 32px;
 }
 /* Welcome Page */
-section > .title > span{
+div > .title > span{
   margin-right: 10px;
 }
-section > .title {
+div > .title {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 5px;
   
 }
 
-section.welcome-page .content li {
+div.welcome-page .content li {
   padding: 5px 0px;
 }
-section.login-page .content li {
+div.login-page .content li {
   margin-top: 10px;
 }
 input#ECTS {
