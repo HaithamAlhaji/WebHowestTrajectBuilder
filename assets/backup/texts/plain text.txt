@@ -1,0 +1,151 @@
+Howest curriculum builder
+Create your individual curriculum
+HOWEST
+Curriculum builder: the tool for tailored curricula
+Studying for a Bachelor's degree can be tough. Not everyone commences studies with the same background, whilst others combine it with a (full-time) job. In order to service all students from all backgrounds, we enable them to create a tailor-made curriculum that suits their needs.
+
+Curricula have to fit like a glove. Study too light, boredom and disinterest will set in. Take on a too loaded approach and you'll succomb to the insurmountable pressure. It is important that each semester is balanced.
+
+This tool allows you to take your pick from available courses and construct a schedule that does not only fit your needs, but respects the order in which certain topics need to be processed. You may take longer or shorter than a standard student depending on your constructed curriculum, but at least you'll be happy
+
+Go ahead and get started!
+
+Enter personal data
+Enter personal data
+In order to serve you correctly, we need to know some basic information first
+
+name 
+ email 
+ ECTS available for allocation 
+ 
+Select the courses you have already completed
+Selecting the courses that have already been completed will enable us to correctly fill out prerequisite knowledge for follow-up courses. If you haven't completed any courses yet, your selection will be limited to courses from the first and second semester.
+
+S1
+S1
+S1
+S1
+S1
+S1
+visible semesters
+
+
+ascending
+ Sort courses
+Software development 1
+6ECTS
+
+Mattias De Wael
+Completed
+Software development 1
+6ECTS
+
+Mattias De Wael
+Completed
+Software development 1
+6ECTS
+
+Mattias De Wael
+Completed
+Software development 1
+Mattias De Wael
+6ECTS
+
+Completed
+Software development 1
+Mattias De Wael
+6ECTS
+
+Completed
+Software development 1
+Mattias De Wael
+6ECTS
+
+Completed
+Software development 1
+Mattias De Wael
+6ECTS
+
+Completed
+< Modify personal data
+Configure course curriculum >
+Configure course curriculum
+Select the courses you want to include in your curriculum next academic year
+
+S1
+S1
+S1
+S1
+S1
+S1
+zichtbare semesters
+
+
+oplopend
+ Sorteer modules
+Software development 1
+6ECTS
+
+Mattias De Wael
+Take course
+Software development 1
+6ECTS
+
+Mattias De Wael
+Take course
+Software development 1
+6ECTS
+
+Mattias De Wael
+Take course
+Web Development
+Mattias De Wael
+6ECTS
+
+Take course
+Databases
+Mattias De Wael
+6ECTS
+
+Take course
+Project II: Analysis and development project
+Mattias De Wael
+6ECTS
+
+Take course
+Software development 1
+Mattias De Wael
+6ECTS
+
+Take course
+< Modify completed courses
+Choice overview >
+Choice overview
+Carefully study the table below and double check if the completed courses and desired courses check out. Once your application has been submitted, there is no turning back!
+
+Completed ECTS
+60
+Desired ECTS
+34
+completed courses	desired courses
+semester	module	# SP	semester	module	# SP
+S1	Web development	6ECTS	S3	Web Technology	9ECTS
+S1	Web development	6ECTS	S3	Web Technology	9ECTS
+S1	Web development	6ECTS	S3	Web Technology	9ECTS
+S1	Web development	6ECTS	S3	Web Technology	9ECTS
+Totaal aantal SP	32ECTS	Totaal aantal SP	32SP
+< Modify desired courses
+Submit curriculum
+Thank you for your submission!
+Thank you for submitting your curriculum. The course counsellor will be in touch shortly.
+
+quickview
+39 ECTS
+
+39 ECTS left
+
+10% desired ects allocated
+3 courses in S3
+4 courses in S4
+6 courses in S5
+ All images courtesy of font awesome and flaticon

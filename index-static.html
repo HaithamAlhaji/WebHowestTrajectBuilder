@@ -29,9 +29,36 @@
    <main>
       <div class="row">
          <!-- Right Aside -->
-         <div class="column aside">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint ab cupiditate dolorem
-            quibusdam iste, repellendus eum eius corporis voluptatum ullam, architecto harum quaerat laborum recusandae
-            nisi voluptate, beatae magnam incidunt.</div>
+         <div class="column aside">
+            <ul>
+               <li class="title">
+                  quickview
+               </li>
+               <li class="ects-total">
+                  <ul>
+                     <li>39</li>
+                     <li>ECTS</li>
+                  </ul>
+               </li>
+               <li class="ects-total-info">
+                  <ul>
+                     <li>39 ECTS</li>
+                     <li class="ects-gauge">
+                        <div class="reserved"></div>
+                     </li>
+                     <li>10% desired ects allocated</li>
+                  </ul>
+               </li>
+               <li class="ects-course-details">
+                  <ul>
+                     <li>3 courses in S3</li>
+                     <li>4 courses in S3</li>
+                     <li>6 courses in S3</li>
+                  </ul>
+               </li>
+
+            </ul>
+         </div>
          <!-- Right Aside -->
          <div class="column main">
             <!-- Welcome Page -->
@@ -153,7 +180,7 @@
                            <div class="image"> </div>
                            <div class="ects"> 00ECTS</div>
                            <div class="instructor"> Oby da. A</div>
-                           <div class="btn"> Compelete </div>
+                           <div class="btn completed"> Compelete </div>
 
                         </li>
                         <li>
@@ -161,7 +188,7 @@
                            <div class="image"> </div>
                            <div class="ects"> 00ECTS</div>
                            <div class="instructor"> Oby da. A</div>
-                           <div class="btn"> Compelete </div>
+                           <div class="btn completed"> Compelete </div>
 
                         </li>
                         <li>
@@ -222,8 +249,8 @@
                               <li class="semesters-selector">
                                  <ul>
                                     <li class="selected">S1</li>
-                                    <li>S1</li>
-                                    <li>S1</li>
+                                    <li class="selected">S2</li>
+                                    <li class="selected">S3</li>
                                     <li>S1</li>
                                     <li>S1</li>
                                     <li>S1</li>
@@ -306,7 +333,7 @@
             </section>
             <!-- Configure Course Page -->
             <!-- Choice Course Page -->
-            <section class="Choice-page">
+            <section class="choice-page">
                <div class="title">
                   <span>
                      <img class="icon" src="./assets/media/overview.svg" alt="">
@@ -334,127 +361,82 @@
                      <li>
                         <table class="courses-view completesd">
                            <tr>
-                              <th colspan=" 3">Company</th>
+                              <th colspan="3">completed courses</th>
                            </tr>
                            <tr class="table-titles">
-                              <th>Company</th>
-                              <th>Contact</th>
-                              <th>Country</th>
+                              <th>semester</th>
+                              <th>module</th>
+                              <th># SP</th>
                            </tr>
                            <tr>
-                              <td>Alfreds Futterkiste</td>
-                              <td>Maria Anders</td>
-                              <td>Germany</td>
+                              <td>S1</td>
+                              <td>We Development</td>
+                              <td>6ECTS</td>
                            </tr>
                            <tr>
-                              <td>Berglunds snabbköp</td>
-                              <td>Christina Berglund</td>
-                              <td>Sweden</td>
+                              <td>S1</td>
+                              <td>We Development</td>
+                              <td>6ECTS</td>
                            </tr>
                            <tr>
-                              <td>Centro comercial Moctezuma</td>
-                              <td>Francisco Chang</td>
-                              <td>Mexico</td>
+                              <td>S1</td>
+                              <td>We Development</td>
+                              <td>6ECTS</td>
                            </tr>
                            <tr>
-                              <td>Ernst Handel</td>
-                              <td>Roland Mendel</td>
-                              <td>Austria</td>
+                              <td>S1</td>
+                              <td>We Development</td>
+                              <td>6ECTS</td>
                            </tr>
+
                            <tr>
-                              <td>Island Trading</td>
-                              <td>Helen Bennett</td>
-                              <td>UK</td>
-                           </tr>
-                           <tr>
-                              <td>Königlich Essen</td>
-                              <td>Philip Cramer</td>
-                              <td>Germany</td>
-                           </tr>
-                           <tr>
-                              <td>Laughing Bacchus Winecellars</td>
-                              <td>Yoshi Tannamuri</td>
-                              <td>Canada</td>
-                           </tr>
-                           <tr>
-                              <td>Magazzini Alimentari Riuniti</td>
-                              <td>Giovanni Rovelli</td>
-                              <td>Italy</td>
-                           </tr>
-                           <tr>
-                              <td>North/South</td>
-                              <td>Simon Crowther</td>
-                              <td>UK</td>
-                           </tr>
-                           <tr>
-                              <td>Paris spécialités</td>
-                              <td>Marie Bertrand</td>
-                              <td>France</td>
+                              <td style="text-align: right;" colspan="2">Total antal SP</td>
+                              <td>32ECTS</td>
                            </tr>
                         </table>
                         <table class="courses-view desired">
                            <tr>
-                              <th colspan="3">Company</th>
+                              <th colspan="3">Desired courses</th>
                            </tr>
                            <tr class="table-titles">
-                              <th>Company</th>
-                              <th>Contact</th>
-                              <th>Country</th>
+                              <th>semester</th>
+                              <th>module</th>
+                              <th># SP</th>
                            </tr>
                            <tr>
-                              <td>Alfreds Futterkiste</td>
-                              <td>Maria Anders</td>
-                              <td>Germany</td>
+                              <td>S3</td>
+                              <td>Web Technology</td>
+                              <td>9ECTS</td>
                            </tr>
                            <tr>
-                              <td>Berglunds snabbköp</td>
-                              <td>Christina Berglund</td>
-                              <td>Sweden</td>
+                              <td>S3</td>
+                              <td>Web Technology</td>
+                              <td>9ECTS</td>
                            </tr>
                            <tr>
-                              <td>Centro comercial Moctezuma</td>
-                              <td>Francisco Chang</td>
-                              <td>Mexico</td>
+                              <td>S3</td>
+                              <td>Web Technology</td>
+                              <td>9ECTS</td>
                            </tr>
                            <tr>
-                              <td>Ernst Handel</td>
-                              <td>Roland Mendel</td>
-                              <td>Austria</td>
+                              <td>S3</td>
+                              <td>Web Technology</td>
+                              <td>9ECTS</td>
                            </tr>
                            <tr>
-                              <td>Island Trading</td>
-                              <td>Helen Bennett</td>
-                              <td>UK</td>
-                           </tr>
-                           <tr>
-                              <td>Königlich Essen</td>
-                              <td>Philip Cramer</td>
-                              <td>Germany</td>
-                           </tr>
-                           <tr>
-                              <td>Laughing Bacchus Winecellars</td>
-                              <td>Yoshi Tannamuri</td>
-                              <td>Canada</td>
-                           </tr>
-                           <tr>
-                              <td>Magazzini Alimentari Riuniti</td>
-                              <td>Giovanni Rovelli</td>
-                              <td>Italy</td>
-                           </tr>
-                           <tr>
-                              <td>North/South</td>
-                              <td>Simon Crowther</td>
-                              <td>UK</td>
-                           </tr>
-                           <tr>
-                              <td>Paris spécialités</td>
+                              <td style="text-align: right;" colspan="2">Paris spécialités</td>
                               <td>Marie Bertrand</td>
-                              <td>France</td>
                            </tr>
                         </table>
                      </li>
                   </ul>
 
+               </div>
+               <div class="navigators">
+                  <button class="btn">
+                     Modify personal data </button>
+                  <button class="btn">
+                     Configure course curriculum</button>
                </div>
             </section>
             <!-- Choice Course Page -->

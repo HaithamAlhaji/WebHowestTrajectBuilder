@@ -1,14 +1,18 @@
 /* Global */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
 body {
   /* Google advises this color */
   background-color: #f1f1f1;
+  color: #5f5352;
+  font-family: 'EB Garamond', serif;
+
 }
 * {
-  padding: 0px 20px;
+ 
 }
 .btn {
   background-color: #44c8f5;
-  padding: 5px 10px;
+  padding: 7px 10px;
   color: white;
   text-align: center;
   font-weight: bold;
@@ -16,6 +20,16 @@ body {
   border-radius: 5px;
   border-color: transparent;
   cursor: pointer;
+}
+.btn.completed{
+  background-color: #ec008c;
+  
+}
+.btn.completed::before{
+  content: url("../../assets/media/check-white.svg");
+  float: left;
+  height: 20px;
+  width: 20px;
 }
 .mark {
   background-color: red;
@@ -104,12 +118,13 @@ nav ul,.complete-controller,.navigators {
 nav ul > li.title {
   font-weight: bold;
   color: #44c8f5;
-  font-size: 26px;
+  font-size: 2rem;
 }
 nav ul li.create-curriculum {
   color: white;
   display: inline-block;
   text-align: center;
+  font-size: 1rem;
 }
 /* Main */
 main section{
@@ -150,13 +165,36 @@ aside {
   text-align: center;
   border-radius: 25px 0 0 25px;
 }
+.aside > ul > li{
+  margin-bottom: 25px;
+}
+.aside > ul > li.title{
+  font-size: 2rem;
+}
+.aside > ul > li.ects-total-info{
+  font-size: 0.9rem;
+}
+.aside > ul > li.ects-total-info:last-child{
+  font-size: 0.7rem;
+}
+.ects-gauge{
+  background-color: black;
+  height: 25px;
+  width: 100%;
+  margin: 5px auto;
+}
+.ects-gauge .reserved{
+  height: 100%;
+  width: 50%;
+  background-color:#f5f2b6 ;
+}
 .icon {
   height: 32px;
   width: 32px;
 }
 /* Welcome Page */
 section > .title {
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: bold;
   margin-bottom: 5px;
 }
@@ -184,10 +222,16 @@ input#ECTS {
 .semesters-selector ul li.selected{
   background-color: #60cf60;
 }
+.semesters-selector ul li.selected::before{
+  content: url("../../assets/media/check-white.svg");
+  height: 20px;
+  width: 20px;
+}
 .ordering{
   text-align: center;
   font-size: 12px;
 }
+
 .courses ul{
   display: flex;
   flex-direction: row;
@@ -245,8 +289,15 @@ input#ECTS {
   font-size: 40px;
 
 }
+
 .ects-counts li img{
   width: 100px;
+}
+.choice-page .content{
+  display: inline-block;
+}
+.navigators{
+  margin-top: 10px;
 }
 table.courses-view{
   float: left;
@@ -258,23 +309,37 @@ table.courses-view{
   width: 100%;
 }
 
-.courses-view.completesd{
-  background-color: rgba(60,200,245,0.3);
+.courses-view,th,td{
+  border:none
+}
+.courses-view.completesd tr:nth-child(1),.courses-view.completesd tr:nth-child(2),.courses-view.completesd tr:last-child{
+  background-color:rgba(60,200,245,0.3);
+}
+.courses-view.completesd tr:nth-child(even):not(:nth-child(2)):not(:nth-child(1)){
+  background-color: rgba(60,200,245,0.2);
+}
+.courses-view.completesd tr:nth-child(odd):not(:nth-child(2):nth-child(1)){
+  background-color: rgba(60,200,245,0.1)
 }
 
-.table-titles{
-  background-color: rgba(60,200,245,0.3) 
+.courses-view.desired tr:nth-child(1),.courses-view.desired tr:nth-child(2),.courses-view.desired tr:last-child{
+  background-color:#ec008c;
+  color: white;
 
+  
 }
-.courses-view.desired{
-  background-color: #ec008c
+
+.courses-view.desired tr:nth-child(even):not(:nth-child(2)):not(:nth-child(1)){
+  background-color: rgba(236,0,140,0.1)
+}
+.courses-view.desired tr:nth-child(odd):not(:nth-child(2):nth-child(1)){
+  background-color: white
 }
 table.courses-view th{
   text-align: center;
   border: 0px solid;
 }
 .courses-view td, .courses-view th {
-  border: 1px solid #ddd;
   padding: 8px;
 }
 

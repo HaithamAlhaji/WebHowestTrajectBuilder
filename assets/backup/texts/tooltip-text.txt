@@ -1,0 +1,5 @@
+Tooltip 1
+Sometimes you need to complete course A before being able to take on course B. These rules are built into the system
+
+Tooltip 2
+Standard students are students who follow a model trajectory laid out by the academy itself
