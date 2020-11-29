@@ -1,18 +1,8 @@
-/* Global */
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
-body {
-  /* Google advises this color */
-  background-color: #f1f1f1;
-  color: #5f5352;
-  font-family: 'EB Garamond', serif;
 
-}
-* {
- 
-}
+
 .btn {
   background-color: #44c8f5;
-  padding: 7px 10px;
+  padding: 15px 20px;
   color: white;
   text-align: center;
   font-weight: bold;
@@ -38,7 +28,7 @@ input[type="text"] {
   width: 100%;
   padding: 5px 10px;
   margin-bottom: 10px;
-  background-color: #ccc;
+  background-color: #eee;
   outline: none;
   border: 0px solid;
   font-size: 2rem;
@@ -103,7 +93,6 @@ input[type="text"] {
   );
 }
 
-/* Top Navbar */
 nav,
 footer {
   background-color: rgba(30, 35, 39, 0.9);
@@ -126,13 +115,14 @@ nav ul li.create-curriculum {
   text-align: center;
   font-size: 1rem;
 }
-/* Main */
-main > div{
-  margin-bottom: 20px;
+body {
+  color: #000;
+  text-align: justify;
 }
-/* Header */
-header {
+#real-area > div{
+  margin: 50px 0 0 0;
 }
+
 header .image {
   background-image: url("../../images/howest.jpg");
   background-position: center;
@@ -140,7 +130,7 @@ header .image {
   background-origin: content-box;
   background-size: cover;
   width: 100%;
-  height: 150px;
+  height: 250px;
 }
 
 aside {
@@ -155,13 +145,13 @@ aside {
 
 .main {
   flex: 85%;
-  padding: 0px 25px;
+  padding: 0px 15px;
 }
 .aside {
   flex: 15%;
   background-color: #44c8f5;
   color: white;
-  padding: 10px;
+  padding: 20px;
   text-align: center;
   border-radius: 25px 0 0 25px;
 }
@@ -171,31 +161,17 @@ aside {
 .aside > ul > li.title{
   font-size: 2rem;
 }
-.aside > ul > li.ects-total-info{
-  font-size: 0.9rem;
-}
-.aside > ul > li.ects-total-info:last-child{
-  font-size: 0.7rem;
-}
-.ects-gauge{
-  background-color: black;
-  height: 25px;
-  width: 100%;
-  margin: 5px auto;
-}
+
 .ects-gauge .reserved{
   height: 100%;
-  width: 50%;
+  width: 70%;
   background-color:#f5f2b6 ;
 }
 .icon {
   height: 32px;
   width: 32px;
 }
-/* Welcome Page */
-div > .title > span{
-  margin-right: 10px;
-}
+
 div > .title {
   font-size: 2rem;
   font-weight: bold;
@@ -203,16 +179,15 @@ div > .title {
   
 }
 
-div.welcome-page .content li {
-  padding: 5px 0px;
+div.welcome .content li {
+  padding: 10px 0px;
 }
-div.login-page .content li {
+div.signup .content li {
   margin-top: 10px;
 }
 input#ECTS {
   width: 150px;
 }
-/* Complete Course */
 .complete-controller{
   margin-top: 15px;
 }
@@ -222,53 +197,65 @@ input#ECTS {
   color: white;
   font-size: 14px;
   background-color: #ccc;
+  cursor: pointer;
+
 }
 .semesters-selector ul li.selected{
   background-color: #60cf60;
 }
-.semesters-selector ul li.selected::before{
+.semesters-selector ul li.selected::after{
   content: url("../../assets/media/check-white.svg");
-  height: 20px;
-  width: 20px;
+  height: 10px;
+  width: 10px;
+  display: inline-block;
 }
 .ordering{
   text-align: center;
   font-size: 12px;
 }
-
-.courses ul{
+.aside > ul > li.ects-total-info{
+  font-size: 0.9rem;
+}
+.aside > ul > li.ects-total-info:last-child{
+  font-size: 0.7rem;
+}
+.ects-gauge{
+  background-color: black;
+  height: 15px;
+  width: 100%;
+  margin: 5px auto;
+}
+.items ul{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   margin-top: 15px;
+  justify-content: center;
 }
-.courses li{
-  width: 200px;
+.items li{
+  width: 280px;
   background-color: rgb(230, 230, 230);
   padding: 15px;
   margin: 10px;
   border-radius: 5px;
   text-align: center;
 }
-.courses li div:not(:last-child){
+.items li div:not(:last-child){
   margin-bottom: 10px;
 }
-.courses li .title {
+.items li .title {
   font-size: 18px;
   font-weight: bold;
 }
-.courses li .ects{
+.items li .ects{
   border:1px dashed #ccc;
   padding: 5px;
   display: inline-block;
   border-radius: 50px;
 } 
-.courses li .image{
+.items li .image{
   height: 150px;
-  background: rgb(163,207,96);
-  background: radial-gradient(circle, rgba(163,207,96,1) 1%, rgba(96,207,96,1) 100%);
 }
-/* Choice */
 .ects-counts{
   margin-top: 25px;
   display: flex;
@@ -297,7 +284,7 @@ input#ECTS {
 .ects-counts li img{
   width: 100px;
 }
-.choice-page .content{
+.choice .content{
   display: inline-block;
 }
 .navigators{
@@ -313,25 +300,7 @@ table.courses-view{
   width: 100%;
 }
 
-.courses-view,th,td{
-  border:none
-}
-.courses-view.completesd tr:nth-child(1),.courses-view.completesd tr:nth-child(2),.courses-view.completesd tr:last-child{
-  background-color:rgba(60,200,245,0.3);
-}
-.courses-view.completesd tr:nth-child(even):not(:nth-child(2)):not(:nth-child(1)){
-  background-color: rgba(60,200,245,0.2);
-}
-.courses-view.completesd tr:nth-child(odd):not(:nth-child(2):nth-child(1)){
-  background-color: rgba(60,200,245,0.1)
-}
 
-.courses-view.desired tr:nth-child(1),.courses-view.desired tr:nth-child(2),.courses-view.desired tr:last-child{
-  background-color:#ec008c;
-  color: white;
-
-  
-}
 
 .courses-view.desired tr:nth-child(even):not(:nth-child(2)):not(:nth-child(1)){
   background-color: rgba(236,0,140,0.1)
@@ -348,9 +317,27 @@ table.courses-view th{
 }
 
 
-/* Footer */
 footer {
   margin-top: 25px;
   text-align: center;
   color: white;
+}
+
+
+
+.courses-view,th,td{
+  border:none
+}
+.courses-view.completesd tr:nth-child(1),.courses-view.completesd tr:nth-child(2){
+  background-color:rgba(60,200,245,0.3);
+}
+.courses-view.completesd tr:nth-child(even):not(:nth-child(2)):not(:nth-child(1)){
+  background-color:rgba(60,200,245,0.1)
+}
+
+.courses-view.desired tr:nth-child(1),.courses-view.desired tr:nth-child(2){
+  background-color:#ec008c;
+  color: white;
+
+  
 }
