@@ -1,9 +1,7 @@
 "use strict";
 
 /* Declare any global variables below this line, but before the first function call */
-
 function init() {
-
     // Fillings
 
     // Bindings
@@ -19,6 +17,6 @@ function handleNavigation(e) {
 
 }
 
-function switchPage(previousPage,nextPage){
+function switchPage(previousPage, nextPage) {
 
 }

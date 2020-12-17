@@ -4,10 +4,12 @@ function processPersonalData(e) {
 
 }
 
-function validateData(person){
+function validateData(person) {
 
 }
 
-function savePersonalData(person){
+function savePersonalData(person) {
 
 }
+
+

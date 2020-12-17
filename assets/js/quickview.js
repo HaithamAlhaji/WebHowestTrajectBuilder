@@ -4,11 +4,11 @@ function fillQuickview() {
 
 }
 
-function progressBar(desiredECTS, totalECTS){
+function progressBar(desiredECTS, totalECTS) {
 
 }
 
-function ectsPerSemester(){
+function ectsPerSemester() {
 
 }
 
